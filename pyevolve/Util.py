@@ -15,6 +15,10 @@ from math import sqrt as math_sqrt
 import logging
 from . import Consts
 
+try:
+    xrange
+except NameError:
+    xrange = range
 
 def randomFlipCoin(p):
     """Returns True with the *p* probability. If *p* is 1, the

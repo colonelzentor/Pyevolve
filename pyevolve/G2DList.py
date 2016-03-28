@@ -40,6 +40,10 @@ Class
 from .GenomeBase import GenomeBase
 from . import Consts
 
+try:
+    xrange
+except NameError:
+    xrange = range
 
 class G2DList(GenomeBase):
     """ G2DList Class - The 2D List chromosome representation

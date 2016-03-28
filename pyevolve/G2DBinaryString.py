@@ -44,6 +44,10 @@ from .GenomeBase import GenomeBase
 from . import Consts
 from . import Util
 
+try:
+    xrange
+except NameError:
+    xrange = range
 
 class G2DBinaryString(GenomeBase):
     """ G3DBinaryString Class - The 2D Binary String chromosome

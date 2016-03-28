@@ -46,6 +46,11 @@ try:
 except ImportError:
     HAVE_PYDOT = False
 
+try:
+    xrange
+except NameError:
+    xrange = range
+
 #################################
 #             GTree             #
 #################################

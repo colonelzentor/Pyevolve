@@ -16,6 +16,11 @@ import inspect
 from .FunctionSlot import FunctionSlot
 from . import Util
 
+try:
+    xrange
+except NameError:
+    xrange = range
+
 class GenomeBase(object):
    """ GenomeBase Class - The base of all chromosome representation """
    __slots__ = ["evaluator", "initializator", "mutator", "crossover", "internalParams", "score", "fitness"]

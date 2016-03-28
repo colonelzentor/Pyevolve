@@ -15,6 +15,11 @@ import math
 from . import Util
 from . import Consts
 
+try:
+    xrange
+except NameError:
+    xrange = range
+
 #############################
 ##     1D Binary String    ##
 #############################

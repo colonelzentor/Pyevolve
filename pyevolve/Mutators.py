@@ -15,6 +15,11 @@ from random import choice as rand_choice
 from . import Consts
 from . import GTree
 
+try:
+    xrange
+except NameError:
+    xrange = range
+
 #############################
 ##     1D Binary String    ##
 #############################

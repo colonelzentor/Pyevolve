@@ -20,6 +20,11 @@ from random import randint as rand_randint, uniform as rand_uniform, choice as r
 from . import GTree
 from . import Util
 
+try:
+    xrange
+except NameError:
+    xrange = range
+
 
 #############################
 ##     1D Binary String    ##
