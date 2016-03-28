@@ -1,3 +1,5 @@
+from __future__ import absolute_import, division, print_function
+
 """
 :mod:`pyevolve` -- the main pyevolve namespace
 ================================================================
@@ -19,7 +21,7 @@ __all__ = ["Consts", "Crossovers", "DBAdapters", "FunctionSlot",
 __version__ = '0.6'
 __author__ = 'Christian S. Perone'
 
-import pyevolve.Consts
+import pyevolve.Consts as Consts
 import sys
 
 if sys.version_info[:2] < Consts.CDefPythonRequire:
