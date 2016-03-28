@@ -41,6 +41,8 @@ from .Statistics import Statistics
 from math import sqrt as math_sqrt
 import logging
 
+from functools import cmp_to_key
+
 try:
     xrange
 except NameError:
@@ -329,12 +331,12 @@ class GPopulation(object):
       rev = (self.minimax == Consts.minimaxType["maximize"])
 
       if self.sortType == Consts.sortType["raw"]:
-         self.internalPop.sort(cmp=Util.cmp_individual_raw, reverse=rev)
+         self.internalPop.sort(key=cmp_to_key(Util.cmp_individual_raw), reverse=rev)
       else:
          self.scale()
-         self.internalPop.sort(cmp=Util.cmp_individual_scaled, reverse=rev)
+         self.internalPop.sort(key=cmp_to_key(Util.cmp_individual_scaled), reverse=rev)
          self.internalPopRaw = self.internalPop[:]
-         self.internalPopRaw.sort(cmp=Util.cmp_individual_raw, reverse=rev)
+         self.internalPopRaw.sort(key=cmp_to_key(Util.cmp_individual_raw), reverse=rev)
 
       self.sorted = True
 
