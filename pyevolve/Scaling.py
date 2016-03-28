@@ -13,6 +13,11 @@ from . import Util
 import math
 import logging
 
+try:
+    xrange
+except NameError:
+    xrange = range
+
 def LinearScaling(pop):
    """ Linear Scaling scheme
 
