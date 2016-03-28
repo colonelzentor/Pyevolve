@@ -71,10 +71,10 @@ Now, all we need to do is to evolve the population! ::
    ga.evolve(freq_stats=10)
 
    # Best individual
-   print ga.bestIndividual()
+   print(ga.bestIndividual())
 
 .. note:: Pyevolve have the __repr__() function  implemented for almost all objects, this means that you
-          can use syntax like 'print object' and the object information will be show in an
+          can use syntax like 'print(object)' and the object information will be show in an
           pretty format.
 
 Ready, now we have our first Genetic Algorithm. It looks more like a "Hello GA!" application. The code above shows the call of 
@@ -135,7 +135,7 @@ Here is the final source code: ::
    genome.evaluator.set(eval_func)
    ga = GSimpleGA.GSimpleGA(genome)
    ga.evolve(freq_stats=10)
-   print ga.bestIndividual()
+   print(ga.bestIndividual())
 
 
 
@@ -501,7 +501,7 @@ Here is a simple example: ::
       
       ga(freq_stats=10)
       best = ga.bestIndividual()
-      print best
+      print(best)
 
    if __name__ == "__main__":
       main_run()
@@ -615,7 +615,7 @@ to setup and start the evolution: ::
       
       ga(freq_stats=10)
       best = ga.bestIndividual()
-      print best
+      print(best)
 
 And in the last part of the source code, we have: ::
 

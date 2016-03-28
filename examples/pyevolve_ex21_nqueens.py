@@ -50,8 +50,8 @@ def run_main():
     ga.evolve(freq_stats=10)
 
     best = ga.bestIndividual()
-    print best
-    print "Best individual score: %.2f\n" % (best.getRawScore(),)
+    print(best)
+    print("Best individual score: %.2f\n" % (best.getRawScore(),))
 
 if __name__ == "__main__":
     run_main()

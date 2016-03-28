@@ -31,8 +31,8 @@ def run_main():
 
     # Best individual
     best = ga.bestIndividual()
-    print "\nBest individual score: %.2f" % (best.score,)
-    print best
+    print("\nBest individual score: %.2f" % (best.score,))
+    print(best)
 
 
 if __name__ == "__main__":

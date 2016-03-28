@@ -70,7 +70,7 @@ def write_tour_to_img(coords, tour, img_file):
         d.ellipse((x-5,y-5,x+5,y+5),outline=(0,0,0),fill=(196,196,196))
     del d
     img.save(img_file, "PNG")
-    print "The plot was saved into the %s file." % (img_file,)
+    print("The plot was saved into the %s file." % (img_file,))
 
 def G1DListTSPInitializator(genome, **args):
     """ The initializator for the TSP """
@@ -124,7 +124,7 @@ def main_run():
     if PIL_SUPPORT:
         write_tour_to_img(coords, best, "tsp_result.png")
     else:
-        print "No PIL detected, cannot plot the graph !"
+        print("No PIL detected, cannot plot the graph !")
 
 if __name__ == "__main__":
     main_run()

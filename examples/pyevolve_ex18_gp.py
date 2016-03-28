@@ -41,7 +41,7 @@ def main_run():
 
     ga(freq_stats=10)
     best = ga.bestIndividual()
-    print best
+    print(best)
 
 if __name__ == "__main__":
     main_run()

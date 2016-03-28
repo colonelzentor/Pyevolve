@@ -20,7 +20,7 @@ def evolve_callback(ga_engine):
     generation = ga_engine.getCurrentGeneration()
     if generation%50==0:
         indiv = ga_engine.bestIndividual()
-        print ''.join(map(chr,indiv))
+        print(''.join(map(chr,indiv)))
     return False
 
 def run_main():
@@ -47,8 +47,8 @@ def run_main():
     ga.evolve(freq_stats=100)
 
     best = ga.bestIndividual()
-    print "Best individual score: %.2f" % (best.score,)
-    print ''.join(map(chr, best))
+    print("Best individual score: %.2f" % (best.score,))
+    print(''.join(map(chr, best)))
 
 if __name__ == "__main__":
     run_main()

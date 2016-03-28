@@ -118,7 +118,7 @@ or install from an URL: ::
 This command will automatically search, download and install a suitable version of Pyevolve; once you have installed it, you can perform test for success: ::
 
    >>> import pyevolve
-   >>> print pyevolve.__version__
+   >>> print(pyevolve.__version__)
    'v.0.6rc1'
 
 The *easy_install* utility is part of `setuptools <http://pypi.python.org/pypi/setuptools>`_. Once you have installed setuptools, you will find the easy_install.exe program in your Python Scripts subdirectory.

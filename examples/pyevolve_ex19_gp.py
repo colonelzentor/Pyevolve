@@ -75,7 +75,7 @@ def main_run():
     ga.setPopulationSize(80)
 
     ga(freq_stats=1)
-    print ga.bestIndividual()
+    print(ga.bestIndividual())
 
     graph = pydot.Dot()
     ga.bestIndividual().writeDotGraph(graph)
