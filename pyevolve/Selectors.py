@@ -12,6 +12,11 @@ This module have the *selection methods*, like roulette wheel, tournament, ranki
 import random
 from . import Consts
 
+try:
+    xrange
+except NameError:
+    xrange = range
+
 def GRankSelector(population, **args):
    """ The Rank Selector - This selector will pick the best individual of
    the population every time.

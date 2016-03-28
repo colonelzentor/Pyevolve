@@ -79,6 +79,10 @@ import pyevolve
 if sys_platform[:3] == "win":
     import msvcrt
 
+try:
+    xrange
+except NameError:
+    xrange = range
 
 def RawScoreCriteria(ga_engine):
     """ Terminate the evolution using the **bestrawscore** and **rounddecimal**
