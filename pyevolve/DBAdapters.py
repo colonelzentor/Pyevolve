@@ -392,7 +392,7 @@ class DBSQLite(DBBaseAdapter):
          c.execute(stmt2, (self.getIdentify(),))
       except self.sqlite3mod.OperationalError, expt:
          if str(expt).find("no such table") >= 0:
-            print "\n ## The DB Adapter can't find the tables ! Consider enable the parameter resetDB ! ##\n"
+            print("\n ## The DB Adapter can't find the tables ! Consider enable the parameter resetDB ! ##\n")
 
       self.commit()
 
@@ -463,10 +463,10 @@ class DBXMLRPC(DBBaseAdapter):
       from SimpleXMLRPCServer import SimpleXMLRPCServer
 
       def insert(l):
-          print "Received statistics: %s" % l
+          print("Received statistics: %s" % l)
 
       server = SimpleXMLRPCServer(("localhost", 8000), allow_none=True)
-      print "Listening on port 8000..."
+      print("Listening on port 8000...")
       server.register_function(insert, "insert")
       server.serve_forever()
 

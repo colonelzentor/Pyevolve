@@ -225,7 +225,7 @@ class Graph(object):
        >>> g.addEdge("a", "b")
        >>> g.addEdge("b", "c")
        >>> for node in g:
-       ...    print node
+       ...    print(node)
        a
        b
        c

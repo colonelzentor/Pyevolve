@@ -391,7 +391,7 @@ class GTreeGP(GTreeBase):
         :param startNode: used to plot more than one individual
         """
         if not HAVE_PYDOT:
-            print "You must install Pydot to use this feature !"
+            print("You must install Pydot to use this feature !")
             return
 
         count = startNode

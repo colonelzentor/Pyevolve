@@ -426,21 +426,21 @@ if __name__ == "__main__":
       s.start()
 
       while True:
-         print ".",
+         print(".",)
          time.sleep(10)
          if s.isReady():
             item = s.popPool()
-            print item
+            print(item)
          time.sleep(4)
          s.shutdown()
          break
    elif arg == "client":
-      print "Binding on %s..." % myself[0]
+      print("Binding on %s..." % myself[0])
       s = UDPThreadUnicastClient(myself[0], 1500)
       s.setData("dsfssdfsfddf")
       s.setTargetHost(myself[0], 666)
       s.start()
       s.join()
-      print s.getSentBytes()
+      print(s.getSentBytes())
 
-   print "end..."
+   print("end...")

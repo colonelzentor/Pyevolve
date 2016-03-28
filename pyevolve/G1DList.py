@@ -79,7 +79,7 @@ class G1DList(G1DBase):
 
        Iteration
           >>> for i in genome:
-          >>>   print i
+          >>>   print(i)
           1
           2
           3

@@ -60,7 +60,7 @@ class G2DList(GenomeBase):
 
        Iteration
           >>> for row in genome:
-          >>>   print row
+          >>>   print(row)
           [1, 3, 4, 1]
           [7, 5, 3, 4]
           [9, 0, 1, 2]

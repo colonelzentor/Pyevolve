@@ -100,16 +100,16 @@ class GPopulation(object):
 
       Get the statistics from the :class:`Statistics.Statistics` instance
          >>> stats = pop.getStatistics()
-         >>> print stats["rawMax"]
+         >>> print(stats["rawMax"])
          10.4
 
       Iterate, get/set individuals
          >>> for ind in pop:
-         >>>   print ind
+         >>>   print(ind)
          (...)
 
          >>> for i in xrange(len(pop)):
-         >>>    print pop[i]
+         >>>    print(pop[i])
          (...)
 
          >>> pop[10] = newGenome
@@ -436,7 +436,7 @@ class GPopulation(object):
       else:
          message = "Max/Min/Avg Raw [%(rawMax).2f/%(rawMin).2f/%(rawAve).2f]" % self.stats
       logging.info(message)
-      print message
+      print(message)
       return message
 
    def copy(self, pop):
