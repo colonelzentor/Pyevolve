@@ -1,3 +1,5 @@
+from __future__ import absolute_import, division, print_function
+
 """
 
 :mod:`GenomeBase` -- the genomes base module
