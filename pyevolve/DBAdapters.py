@@ -20,8 +20,8 @@ module, you'll find the adapters above cited.
 """
 
 from pyevolve import __version__
-import Consts
-import Util
+from . import Consts
+from . import Util
 import logging
 import types
 import datetime

@@ -37,8 +37,8 @@ Class
 
 """
 
-from GenomeBase import GenomeBase
-import Consts
+from .GenomeBase import GenomeBase
+from . import Consts
 
 
 class G2DList(GenomeBase):

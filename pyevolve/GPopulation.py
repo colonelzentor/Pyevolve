@@ -34,10 +34,10 @@ Class
 
 """
 
-import Consts
-import Util
-from FunctionSlot import FunctionSlot
-from Statistics import Statistics
+from . import Consts
+from . import Util
+from .FunctionSlot import FunctionSlot
+from .Statistics import Statistics
 from math import sqrt as math_sqrt
 import logging
 

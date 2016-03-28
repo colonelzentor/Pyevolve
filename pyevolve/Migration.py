@@ -12,11 +12,11 @@ GA related functions.
 
 """
 
-import Util
+from . import Util
 from random import randint as rand_randint, choice as rand_choice
-import Network
-import Consts
-from FunctionSlot import FunctionSlot
+from . import Network
+from . import Consts
+from .FunctionSlot import FunctionSlot
 import logging
 
 try:

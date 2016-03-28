@@ -8,8 +8,8 @@ from __future__ import absolute_import, division, print_function
 This module have the *scaling schemes* like Linear scaling, etc.
 
 """
-import Consts
-import Util
+from . import Consts
+from . import Util
 import math
 import logging
 

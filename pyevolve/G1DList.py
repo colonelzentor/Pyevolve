@@ -36,8 +36,8 @@ Class
 -------------------------------------------------------------
 
 """
-from GenomeBase import GenomeBase, G1DBase
-import Consts
+from .GenomeBase import GenomeBase, G1DBase
+from . import Consts
 
 
 class G1DList(G1DBase):

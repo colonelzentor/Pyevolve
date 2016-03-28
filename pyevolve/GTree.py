@@ -36,9 +36,9 @@ Classes
 -------------------------------------------------------------
 """
 import random
-from GenomeBase import GenomeBase, GTreeBase, GTreeNodeBase
-import Consts
-import Util
+from .GenomeBase import GenomeBase, GTreeBase, GTreeNodeBase
+from . import Consts
+from . import Util
 
 try:
     import pydot

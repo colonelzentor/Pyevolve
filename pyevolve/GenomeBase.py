@@ -13,8 +13,8 @@ take a inside look into this module.
 from random import choice as rand_choice
 import inspect
 
-from FunctionSlot import FunctionSlot
-import Util
+from .FunctionSlot import FunctionSlot
+from . import Util
 
 class GenomeBase(object):
    """ GenomeBase Class - The base of all chromosome representation """

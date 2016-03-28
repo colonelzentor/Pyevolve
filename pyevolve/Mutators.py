@@ -9,11 +9,11 @@ In this module we have the genetic operators of mutation for each chromosome rep
 
 """
 
-import Util
+from . import Util
 from random import randint as rand_randint, gauss as rand_gauss, uniform as rand_uniform
 from random import choice as rand_choice
-import Consts
-import GTree
+from . import Consts
+from . import GTree
 
 #############################
 ##     1D Binary String    ##

@@ -40,9 +40,9 @@ Class
 -------------------------------------------------------------
 """
 
-from GenomeBase import GenomeBase
-import Consts
-import Util
+from .GenomeBase import GenomeBase
+from . import Consts
+from . import Util
 
 
 class G2DBinaryString(GenomeBase):
