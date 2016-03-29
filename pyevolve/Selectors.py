@@ -10,7 +10,7 @@ This module have the *selection methods*, like roulette wheel, tournament, ranki
 """
 
 import random
-from . import Consts
+from pyevolve import Consts
 
 try:
     xrange

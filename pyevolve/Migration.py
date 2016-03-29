@@ -12,11 +12,11 @@ GA related functions.
 
 """
 
-from . import Util
+from pyevolve import Util
 from random import randint as rand_randint, choice as rand_choice
-from . import Network
-from . import Consts
-from .FunctionSlot import FunctionSlot
+from pyevolve import Network
+from pyevolve import Consts
+from pyevolve.FunctionSlot import FunctionSlot
 import logging
 
 try:

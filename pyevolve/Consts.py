@@ -367,13 +367,13 @@ Migration Constants (:mod:`Migration`)
 
 
 """
-from . import Scaling
-from . import Selectors
-from . import Initializators
-from . import Mutators
-from . import Crossovers
+from pyevolve import Scaling
+from pyevolve import Selectors
+from pyevolve import Initializators
+from pyevolve import Mutators
+from pyevolve import Crossovers
 import logging
-from .GTree import GTreeGP
+from pyevolve.GTree import GTreeGP
 
 # Required python version 2.5+
 CDefPythonRequire = (2, 5)

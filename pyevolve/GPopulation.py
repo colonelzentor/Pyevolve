@@ -34,10 +34,10 @@ Class
 
 """
 
-from . import Consts
-from . import Util
-from .FunctionSlot import FunctionSlot
-from .Statistics import Statistics
+from pyevolve import Consts
+from pyevolve import Util
+from pyevolve.FunctionSlot import FunctionSlot
+from pyevolve.Statistics import Statistics
 from math import sqrt as math_sqrt
 import logging
 

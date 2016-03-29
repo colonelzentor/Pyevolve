@@ -25,7 +25,7 @@ try:
 except ImportError:
     ZLIB_SUPPORT = False
 
-import Consts
+from pyevolve import Consts
 import logging
 
 def getMachineIP():

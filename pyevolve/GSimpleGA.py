@@ -67,12 +67,12 @@ from sys import platform as sys_platform
 from sys import stdout as sys_stdout
 import code
 
-from .GPopulation import GPopulation
-from .FunctionSlot import FunctionSlot
-from .GenomeBase import GenomeBase
-from .DBAdapters import DBBaseAdapter
-from . import Consts
-from . import Util
+from pyevolve.GPopulation import GPopulation
+from pyevolve.FunctionSlot import FunctionSlot
+from pyevolve.GenomeBase import GenomeBase
+from pyevolve.DBAdapters import DBBaseAdapter
+from pyevolve import Consts
+from pyevolve import Util
 import pyevolve
 
 # Platform dependant code for the Interactive Mode

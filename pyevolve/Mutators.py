@@ -9,11 +9,11 @@ In this module we have the genetic operators of mutation for each chromosome rep
 
 """
 
-from . import Util
+from pyevolve import Util
 from random import randint as rand_randint, gauss as rand_gauss, uniform as rand_uniform
 from random import choice as rand_choice
-from . import Consts
-from . import GTree
+from pyevolve import Consts
+from pyevolve import GTree
 
 try:
     xrange

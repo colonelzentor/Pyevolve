@@ -40,9 +40,9 @@ Class
 -------------------------------------------------------------
 """
 
-from .GenomeBase import GenomeBase
-from . import Consts
-from . import Util
+from pyevolve.GenomeBase import GenomeBase
+from pyevolve import Consts
+from pyevolve import Util
 
 try:
     xrange

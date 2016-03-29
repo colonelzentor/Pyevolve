@@ -13,7 +13,7 @@ use, like list item swap, random utilities and etc.
 from random import random as rand_random
 from math import sqrt as math_sqrt
 import logging
-from . import Consts
+from pyevolve import Consts
 
 try:
     xrange

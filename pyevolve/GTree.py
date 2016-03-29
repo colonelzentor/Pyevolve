@@ -36,9 +36,9 @@ Classes
 -------------------------------------------------------------
 """
 import random
-from .GenomeBase import GenomeBase, GTreeBase, GTreeNodeBase
-from . import Consts
-from . import Util
+from pyevolve.GenomeBase import GenomeBase, GTreeBase, GTreeNodeBase
+from pyevolve import Consts
+from pyevolve import Util
 
 try:
     import pydot

@@ -8,8 +8,7 @@ from __future__ import absolute_import, division, print_function
 This module have the *scaling schemes* like Linear scaling, etc.
 
 """
-from . import Consts
-from . import Util
+from pyevolve import Util
 import math
 import logging
 
@@ -24,6 +23,7 @@ def LinearScaling(pop):
    .. warning :: Linear Scaling is only for positive raw scores
 
    """
+   from pyevolve import Consts
    logging.debug("Running linear scaling.")
    pop.statistics()
    c = Consts.CDefScaleLinearMultiplier
@@ -56,6 +56,7 @@ def LinearScaling(pop):
 
 def SigmaTruncScaling(pop):
    """ Sigma Truncation scaling scheme, allows negative scores """
+   from pyevolve import Consts
    logging.debug("Running sigma truncation scaling.")
    pop.statistics()
    c = Consts.CDefScaleSigmaTruncMultiplier
@@ -74,6 +75,7 @@ def PowerLawScaling(pop):
    .. warning :: Power Law Scaling is only for positive raw scores
 
    """
+   from pyevolve import Consts
    logging.debug("Running power law scaling.")
    k = Consts.CDefScalePowerLawFactor
    for i in xrange(len(pop)):
@@ -95,6 +97,7 @@ def BoltzmannScaling(pop):
       The `BoltzmannScaling` function.
 
    """
+   from pyevolve import Consts
    boltz_temperature = pop.getParam("boltz_temperature", Consts.CDefScaleBoltzStart)
    boltz_factor = pop.getParam("boltz_factor", Consts.CDefScaleBoltzFactor)
    boltz_min = pop.getParam("boltz_min", Consts.CDefScaleBoltzMinTemp)

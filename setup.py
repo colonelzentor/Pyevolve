@@ -1,3 +1,5 @@
+from __future__ import absolute_import, division, print_function
+
 from distutils.core import setup #changed to distutils.core for pypy comptibility
 from pyevolve import __version__, __author__
 

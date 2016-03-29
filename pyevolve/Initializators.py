@@ -17,8 +17,8 @@ choosing random data.
 """
 
 from random import randint as rand_randint, uniform as rand_uniform, choice as rand_choice
-from . import GTree
-from . import Util
+from pyevolve import GTree
+from pyevolve import Util
 
 try:
     xrange

@@ -20,12 +20,12 @@ module, you'll find the adapters above cited.
 """
 
 from pyevolve import __version__
-from . import Consts
-from . import Util
+from pyevolve import Consts
+from pyevolve import Util
 import logging
 import types
 import datetime
-from . import Statistics
+from pyevolve import Statistics
 
 
 class DBBaseAdapter(object):

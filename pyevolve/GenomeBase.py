@@ -13,8 +13,8 @@ take a inside look into this module.
 from random import choice as rand_choice
 import inspect
 
-from .FunctionSlot import FunctionSlot
-from . import Util
+from pyevolve.FunctionSlot import FunctionSlot
+from pyevolve import Util
 
 try:
     xrange

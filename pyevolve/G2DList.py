@@ -37,8 +37,8 @@ Class
 
 """
 
-from .GenomeBase import GenomeBase
-from . import Consts
+from pyevolve.GenomeBase import GenomeBase
+from pyevolve import Consts
 
 try:
     xrange

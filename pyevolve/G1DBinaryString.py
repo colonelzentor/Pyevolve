@@ -36,9 +36,9 @@ Class
 
 """
 
-from .GenomeBase import GenomeBase, G1DBase
-from . import Consts
-from . import Util
+from pyevolve.GenomeBase import GenomeBase, G1DBase
+from pyevolve import Consts
+from pyevolve import Util
 
 class G1DBinaryString(G1DBase):
    """ G1DBinaryString Class - The 1D Binary String chromosome

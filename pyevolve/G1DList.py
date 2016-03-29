@@ -36,8 +36,8 @@ Class
 -------------------------------------------------------------
 
 """
-from .GenomeBase import GenomeBase, G1DBase
-from . import Consts
+from pyevolve.GenomeBase import GenomeBase, G1DBase
+from pyevolve import Consts
 
 
 class G1DList(G1DBase):
